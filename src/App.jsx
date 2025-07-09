@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Footer from './components/Footer';
-import { FaEye, FaEyeSlash } from 'react-icons/fa';
+import { FaEye, FaEyeSlash } from 'react-icons/fa6';
 import './App.css';
 
 function App() {
@@ -119,13 +119,13 @@ function App() {
                     <strong>Contraseña: </strong>
                     {showPasswordIndex === index ? item.password : '••••••••'}
                     <button
-                      onClick={() => 
+                      onClick={() =>
                         setShowPasswordIndex(showPasswordIndex === index ? null : index)
                       }
                       className='text-purple-600 hover:text-purple-800'
-                      >
-                        {showPasswordIndex === index ? <FaEyeSlash /> : <FaEye />}
-                      </button>
+                    >
+                      {showPasswordIndex === index ? <FaEyeSlash /> : <FaEye />}
+                    </button>
                   </p>
                 </div>
                 <div className="flex gap-2">
