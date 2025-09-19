@@ -1,10 +1,14 @@
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa6';
+import { FaGithub, FaLinkedin, FaEnvelope, FaHome } from 'react-icons/fa';
+import { SiGmail } from 'react-icons/si';
 
 export default function Footer() {
   return(
 		<footer className='bg-gray-900 text-white py-4 mt-8 w-full fixed bottom-0 left-0 z-10'>
 			<div className='flex flex-col items-center justify-center'>
 				<div className='flex space-x-6 text-xl mb-2'>
+					<a href='https://jcesar206.github.io/myPersonalBlog/' target='_blank' rel='noopener noferrer'>
+						<FaHome className='hover:text-orange-400' />
+					</a>
 					<a href='https://github.com/JCesar206' target='_blank' rel='noopener noferrer'>
 						<FaGithub className='hover:text-green-400' />
 					</a>
@@ -13,6 +17,9 @@ export default function Footer() {
 					</a>
 					<a href='mailto:jcesar206@hotmail.com'>
 						<FaEnvelope className='hover:text-red-400' />
+					</a>
+					<a href='mailto:jcesary06@gmail.com'>
+						<SiGmail className='hover:text-purple-400' />
 					</a>
 				</div>
 			</div>
